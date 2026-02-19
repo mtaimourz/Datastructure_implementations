@@ -3,20 +3,10 @@
  * Uses the linked list implementation from LinkedList_implementation/LL-js (npm linked as "linkedlist")
  */
 
-const {
-  Node,
-  LinkedList,
-  createLinkedList,
-  createListNode,
-  listNodeToArray,
-  createCycle,
-  createCycleByValue,
-} = require('linkedlist');
-
-
-
+const { createListNode} = require('linkedlist');
 
 var solution = function (head) {
+    debugger
     return head
 
 };
