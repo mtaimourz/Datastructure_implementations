@@ -1,40 +1,26 @@
-const { createListNode, createCycle, listNodeToArray } = require('linkedlist');
-global.listNodeToArray = listNodeToArray;
-global.createListNode = createListNode;
-global.createCycle = createCycle;
-
-// paste
-
 /**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
+ * LeetCode solution template
+ * Uses the linked list implementation from LinkedList_implementation/LL-js (npm linked as "linkedlist")
  */
 
-/**
- * @param {ListNode} head
- * @return {boolean}
- */
-var hasCycle = function(head) {
+const {
+  Node,
+  LinkedList,
+  createLinkedList,
+  createListNode,
+  listNodeToArray,
+  createCycle,
+  createCycleByValue,
+} = require('linkedlist');
 
-    let slow = head
-    let fast = head
 
-   while(fast!= undefined && fast.next!=undefined)
-    {
-        slow = slow.next
-        fast = fast.next.next
-        if(slow==fast) return true
-    }
-    return false
+
+
+var solution = function (head) {
+    return head
+
 };
 
-
-
-let head = createListNode([3, 2, 0, -4])
-createCycle(head, 1)
-console.log(hasCycle(head))
-
+const head = createListNode([1, 2, 3, 4, 5]);
+console.log(solution(head));
 

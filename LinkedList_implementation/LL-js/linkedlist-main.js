@@ -1,6 +1,6 @@
 class Node {
-  constructor(data) {
-    this.data = data;
+  constructor(val) {
+    this.val = val;
     this.next = null;
   }
 }
@@ -98,7 +98,7 @@ class LinkedList {
     const values = [];
     
     while (temp !== null) {
-      values.push(temp.data);
+      values.push(temp.val);
       temp = temp.next;
     }
     
@@ -110,7 +110,7 @@ class LinkedList {
     const values = [];
     
     while (temp !== null) {
-      values.push(temp.data);
+      values.push(temp.val);
       temp = temp.next;
     }
     
@@ -152,7 +152,7 @@ function listNodeToArray(head) {
   let current = head;
   
   while (current !== null) {
-    result.push(current.data);
+    result.push(current.val);
     current = current.next;
   }
   
